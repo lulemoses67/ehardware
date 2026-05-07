@@ -26,15 +26,29 @@ main{
 .hero {
     display: block;
     height: 100vh;
-    align-items: last baseline ;
     background-size: cover;
+    .hero-title{
+        font-size: 66px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .text{
+        display: block;
+        margin: auto;
+        font-size: 25px;
+        max-width: 300px;
+    }
+    img{
+        width: 30%;
+    }
 }
 
 
 section{
     padding: 60px 0;
-    text-transform: capitalize;
     .section-title{
+        text-transform: capitalize;
         font-size: 3em;
     }
     .scetion-info{
