@@ -42,7 +42,7 @@ const Navbar = () => {
             <header className="bg-light row align-center text-dark">
             <div className="container">
                 <div className="row align-center">
-                    <div className="col-xs-9 col-lg-6  d-none-md">
+                    <div className="col-xs-9 col-lg-4  d-none-md">
                         <h1 className="logo text-danger">e<span className="small text-dark">Hardware</span></h1> 
                     </div>
                     <div className="col-xs-2 d-none-md d-none-lg">
@@ -54,7 +54,7 @@ const Navbar = () => {
                             {isNavOpen && <i className="fa-solid fa-close" ></i>}
                         </p>
                     </div>
-                    <div className="col-xs-12 s col-md-12 col-lg-6">
+                    <div className="col-xs-12 s col-md-12 col-lg-8">
                         {isNavOpen && <nav>
                             <ol className="nav-bars">
                                 <NavItem link="/" name="Home"/>
