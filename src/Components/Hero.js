@@ -1,4 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -23,7 +24,7 @@ const Hero = () => {
                 />
             </p>
             <p>Find all the best hardware products and tools</p>
-            <button className="btn-primary">Products</button>
+            <Link to={"./all-products"} className="btn-primary">Products</Link>
             <button className="btn-primary">Contact</button>
         </div>
       </div>

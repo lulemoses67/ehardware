@@ -5,15 +5,17 @@
 header{
     z-index: 1000;
     position: fixed;
-    box-shadow: rgba(12, 3, 3, 0.514) 0px 25px 50px -12px;
+    box-shadow: rgba(12, 3, 3, 0.342) 0px 25px 50px -12px;
     .nav-bars{
         @include m.grid-container (6);
         justify-items: space-between;
         align-items: center;
+        box-shadow: rgba(12, 3, 3, 0.514) 0px 25px 50px -12px;
+        border-radius: 20px;
         .nav-item{
-            margin: 10px 0;
+            margin: 5px 0;
             justify-self: center;
-            font-size: 1.1em;
+            font-size: 1,1em;
             font-weight: 500;
             cursor: pointer;
             transition: 1s;

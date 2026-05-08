@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -33,7 +34,7 @@ const Navbar = () => {
 
     const NavItem = (props) => {
         return (
-            <a className="nav-item text-center" href={props.link}><span>{props.name}</span> </a>
+            <NavLink className="nav-item text-center" to={props.link}><span>{props.name}</span> </NavLink>
         );
     }
 
@@ -56,14 +57,14 @@ const Navbar = () => {
                     </div>
                     <div className="col-xs-12 s col-md-12 col-lg-8">
                         {isNavOpen && <nav>
-                            <ol className="nav-bars">
+                            <div className="nav-bars">
                                 <NavItem link="/" name="Home"/>
-                                <NavItem link="/about" name="Products"/>
+                                <NavItem link="/all-products" name="Products"/>
                                 <NavItem link="/about" name="About"/>
                                 <NavItem link="/contact" name="Contact"/>
-                                <li className="nav-item text-primary"> <i className="fa-solid fa-search"></i><span> Search</span> </li>
+                                <NavLink to={"./search"} className="nav-item"><i className="fa-solid fa-search"></i><span> Search</span></NavLink>
                                 <li className="nav-item text-success"> <button className="btn btn-outline"><i className="fa-solid fa-shopping-cart"></i><span>Cart</span></button> </li>
-                            </ol>
+                            </div>
                         </nav>}
                     </div>
                 </div>
