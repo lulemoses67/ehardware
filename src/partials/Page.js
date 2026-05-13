@@ -5,7 +5,7 @@ const Page = ({title, info, children}) => {
         <>
             <section className="section-container">
                 <div className="container">
-                    <div className="text-center">
+                    <div>
                         <h2>{title}</h2>
                         <p>{info}</p>
                     </div>

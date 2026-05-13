@@ -37,9 +37,10 @@ const handleSubmit = (e) => {
     return (
         <>
           <Page title={'Get in touch'} info={'Contact us for any inqury or help'} >
-            <Section info={'Drop your message'}>
-              <div className="row justify-center">
-                <div className="col-12 col-lg-6">
+            <Section>
+              <div className="row">
+                <div className="col-12 col-lg-5">
+                  <h2>Drop your message</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="form-element">
                             <label htmlFor="fullname">Full name</label>
@@ -53,10 +54,13 @@ const handleSubmit = (e) => {
                             <label htmlFor="message">Message</label>
                             <textarea name="message" id="message" onChange={handleChange} value={formData.message} cols="30" rows="10" placeholder="Your message" required></textarea>
                         </div>
-                        <div className="btn-group">
-                            <button type="submit" className="btn-primary"><i className="fa fa-angles-right"></i> Send</button>
+                        <div className="btn-group-rt">
+                            <button type="submit" className="btn-outline"><i className="fa fa-angles-right"></i> Send</button>
                         </div>
                     </form>
+                </div>
+                <div className="col-7">
+                  <h2>Our Map</h2>
                 </div>
               </div>
             </Section>
